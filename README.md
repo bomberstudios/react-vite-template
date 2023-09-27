@@ -1,2 +1,3 @@
 # react-vite-template
-A minimalistic React + Vite template
+
+A minimal React + Vite template, based on the default Vite template for React
