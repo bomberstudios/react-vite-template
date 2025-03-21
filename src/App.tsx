@@ -26,7 +26,7 @@ export const App = () => {
 
   return (
     <>
-      <h1>Vite + React</h1>
+      <h1>Vite + React template</h1>
       <Card>
         <Button onClick={handleClick}>count is {count}</Button>
       </Card>
