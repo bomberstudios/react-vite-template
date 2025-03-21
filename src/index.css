@@ -10,6 +10,11 @@
   --primary: #ff6600;
   --primary-contrast: #f9f9f9;
   --primary-darker: oklch(from #ff6600 calc(l * 0.9) c h);
+  --subtle: light-dark(#ccc, #333);
+
+  --radius-m: 8px;
+
+  --shadow-m: 0 2px 10px light-dark(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
 }
 
 a {
@@ -38,7 +43,7 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: var(--radius-m);
   border: none;
   outline: none;
   padding: 0.8em 1.2em;
