@@ -1,15 +1,25 @@
 import { useState } from "react";
 import "./App.css";
+import React from "react";
 
-function Button({ onClick, children }) {
+type ButtonProps = {
+  onClick: () => void;
+  children: React.ReactNode;
+};
+
+const Button = ({ onClick, children }: ButtonProps) => {
   return <button onClick={onClick}>{children}</button>;
 }
 
-function Card({ children }) {
+type CardProps = {
+  children: React.ReactNode;
+};
+
+const Card = ({ children }: CardProps) => {
   return <div className="card">{children}</div>;
 }
 
-function App() {
+export const App = () => {
   const [count, setCount] = useState(0);
 
   const handleClick = () => setCount((count) => count + 1);
@@ -23,5 +33,3 @@ function App() {
     </>
   );
 }
-
-export default App;
